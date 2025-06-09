@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denver Jose — Portfolio</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        color: #333;
+        text-align: justify;
+        padding-top: 60px;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+        z-index: 1000;
+      }
+
+      nav a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 40px;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+        font-size: 0.9em;
+        color: #777;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+      h1,
+      h2 {
+        margin-top: 30px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .home-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 10px;
+      }
+
+      .home-text {
+        flex: 1 1 300px;
+      }
+
+      .home-image {
+        flex: 0 0 200px;
+      }
+
+      .home-image img {
+        max-width: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      @media (max-width: 600px) {
+        .home-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center; /* center text inside home-text */
+        }
+
+        .home-text,
+        .home-image {
+          flex: none;
+          width: 100%;
+        }
+
+        .home-image img {
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="home">
+        <div class="home-container">
+          <div class="home-text">
+            <h1>Denver Jose</h1>
+            <p>
+              Frontend and Full-stack Developer | Next.js, TypeScript, MERN
+              Stack, Tailwind CSS
+            </p>
+            <p>
+              I build modern, performant web applications with a focus on
+              usability and clean architecture.
+            </p>
+          </div>
+          <div class="home-image">
+            <img src="profile.jpeg" alt="Denver Jose" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a frontend and full-stack developer with hands-on experience
+          building modern web applications using Next.js, TypeScript, Tailwind
+          CSS, MERN stack, and integrations with tools like Stripe, Nodemailer,
+          and OpenAI’s Assistants API. I focus on creating performant, scalable,
+          and user-friendly interfaces.
+        </p>
+        <p>
+          Currently, I work with a US-based client, where I contribute to a
+          templated system designed to rapidly deploy customized websites for
+          new customers. My responsibilities include frontend development,
+          animation using Framer Motion, and integration with third-party
+          services. I’ve also gained exposure to blockchain technologies as part
+          of this role.
+        </p>
+        <p>
+          Previously, I worked with a local client in the Philippines as a
+          full-stack MERN developer, contributing to an owned platform with
+          structured version control practices (GitHub). This reinforced my
+          skills in team collaboration and code quality management.
+        </p>
+        <p>
+          My background also includes extensive experience across diverse MERN
+          stack projects and an internship where I optimized backend services
+          for a crypto trading platform using React and Python. Throughout my
+          career, I’ve worked with GitLab, GitHub, and Bitbucket for version
+          control.
+        </p>
+      </section>
+      <section id="work">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <strong>Frontend Developer — US-based Client</strong> (June 2024 –
+            Present)<br />
+            Company: <strong>Tax Pro Accelerator</strong><br />
+            Website:
+            <a href="https://taxproaccelerator.com/" target="_blank"
+              >https://taxproaccelerator.com/</a
+            ><br />
+            Tech Stack: Next.js (v15.2.4), TypeScript, Tailwind CSS, Framer
+            Motion, Stripe, Calendly, Nodemailer, OpenAI Assistants API<br />
+            Description: Contributed to a templated system for rapidly deploying
+            customized websites; integrated advanced frontend animations and
+            third-party services.
+          </li>
+
+          <li>
+            <strong
+              >Full-stack MERN Developer — Local Client (Philippines)</strong
+            >
+            (Nov 2024 – Jan 2025)<br />
+            Company: <strong>Ask Abogado</strong><br />
+            Website:
+            <a href="https://askabogado.ph" target="_blank"
+              >https://askabogado.ph</a
+            ><br />
+            Tech Stack: MERN Stack (MongoDB, Express.js, React, Node.js),
+            TypeScript, Jest, Postman, GitHub workflows<br />
+            Description: Developed and maintained a legal tech platform;
+            collaborated closely with the CEO and senior developer to deliver
+            high-quality software.
+          </li>
+
+          <li>
+            <strong>Full-stack MERN Developer — Various Clients</strong> (Aug
+            2022 – May 2024)<br />
+            Companies: <strong>Stratpoint Technologies</strong><br />
+            Websites:
+            <a href="https://stratpoint.com" target="_blank"
+              >https://stratpoint.com</a
+            >,
+            <a href="https://marketing.stratpoint.com/wookie" target="_blank"
+              >https://marketing.stratpoint.com/wookie</a
+            ><br />
+            Tech Stack: MERN Stack, TypeScript, Mocha, Chai, Sinon, Postman,
+            GitLab<br />
+            Description: Delivered features across multiple codebases and
+            domains; strengthened adaptability and code comprehension through
+            cross-project experience.
+          </li>
+
+          <li>
+            <strong>Full-stack Developer Intern — Crypto Platform</strong> (Apr
+            2022 – Aug 2022)<br />
+            Company: <strong>Swapoolabs (Makatisoft Inc.)</strong><br />
+            Website:
+            <a href="https://swapoolabs.com/" target="_blank"
+              >https://swapoolabs.com/</a
+            ><br />
+            Tech Stack: React, Python, TypeScript, Pytest, Postman, Bitbucket<br />
+            Description: Optimized backend services and trading bot performance;
+            contributed to crypto wallet and exchange feature implementations.
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: dnvrjose6@gmail.com</p>
+        <p>
+          LinkedIn:
+          <a href="https://linkedin.com/in/denverjose" target="_blank"
+            >linkedin.com/in/denverjose</a
+          >
+        </p>
+        <p>
+          Resume:
+          <a href="denverjose-resume()_.pdf" target="_blank" download
+            >Download PDF</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 Denver Jose. All rights reserved.</footer>
+  </body>
+</html>
