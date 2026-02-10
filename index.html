@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denver Jose — Portfolio</title>
+
     <style>
       html {
         scroll-behavior: smooth;
@@ -15,9 +16,9 @@
         max-width: 1000px;
         margin: 0 auto;
         padding: 20px;
+        padding-top: 70px;
         color: #333;
         text-align: justify;
-        padding-top: 60px;
       }
 
       nav {
@@ -25,16 +26,15 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: white;
-        border-bottom: 1px solid #ccc;
+        background: #fff;
+        border-bottom: 1px solid #ddd;
         text-align: center;
-        padding: 10px 0;
-        margin: 0;
+        padding: 12px 0;
         z-index: 1000;
       }
 
       nav a {
-        margin-right: 20px;
+        margin: 0 15px;
         text-decoration: none;
         color: #333;
         font-weight: bold;
@@ -44,25 +44,18 @@
         text-decoration: underline;
       }
 
-      footer {
-        margin-top: 40px;
-        padding-top: 10px;
-        border-top: 1px solid #ccc;
-        font-size: 0.9em;
-        color: #777;
-        text-align: center;
-      }
       h1 {
         font-size: 2.5em;
         margin-bottom: 10px;
       }
-      h1,
+
       h2 {
-        margin-top: 30px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 6px;
       }
 
       section {
-        margin-bottom: 40px;
+        padding-top: 40px;
       }
 
       ul {
@@ -70,15 +63,32 @@
       }
 
       li {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
       }
 
+      a {
+        color: #000;
+      }
+
+      a:hover {
+        color: #555;
+      }
+
+      footer {
+        margin-top: 50px;
+        padding-top: 15px;
+        border-top: 1px solid #ccc;
+        font-size: 0.9em;
+        color: #777;
+        text-align: center;
+      }
+
+      /* Home section */
       .home-container {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 20px;
-        padding-top: 10px;
+        gap: 30px;
       }
 
       .home-text {
@@ -87,6 +97,7 @@
 
       .home-image {
         flex: 0 0 200px;
+        text-align: center;
       }
 
       .home-image img {
@@ -95,26 +106,36 @@
         object-fit: cover;
       }
 
+      /* Work section */
+      #work li {
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+      }
+
+      #work strong {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      /* Mobile */
       @media (max-width: 600px) {
+        body {
+          text-align: left;
+        }
+
         .home-container {
           flex-direction: column;
-          align-items: center;
-          text-align: center; /* center text inside home-text */
+          text-align: center;
         }
 
-        .home-text,
-        .home-image {
-          flex: none;
-          width: 100%;
-        }
-
-        .home-image img {
-          margin: 0 auto;
+        nav a {
+          margin: 0 10px;
         }
       }
     </style>
   </head>
-  <body>
+
+  <body id="home">
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -123,143 +144,172 @@
     </nav>
 
     <main>
-      <section id="home">
+      <!-- HOME -->
+      <section>
         <div class="home-container">
           <div class="home-text">
             <h1>Denver Jose</h1>
+            <p><strong>Frontend-Focused Full-Stack Developer</strong></p>
             <p>
-              Frontend and Full-stack Developer | Next.js, TypeScript, MERN
-              Stack, Tailwind CSS
+              I help teams and founders build fast, mobile-responsive web
+              applications that solve real problems and deliver clean, reliable
+              user experiences.
             </p>
             <p>
-              I build modern, performant web applications with a focus on
-              usability and clean architecture.
+              Frontend is my strength — thoughtful UI, smooth interactions, and
+              usability — backed by solid full-stack experience when the product
+              needs it.
             </p>
           </div>
+
           <div class="home-image">
             <img src="profile.jpeg" alt="Denver Jose" />
           </div>
         </div>
       </section>
 
+      <!-- WHAT I DO -->
+      <section id="what-i-do">
+        <h2>What I Do</h2>
+        <ul>
+          <li>Build fast, mobile-responsive websites and web applications</li>
+          <li>Turn designs and ideas into clean, usable interfaces</li>
+          <li>Create reusable, scalable frontend systems</li>
+          <li>Integrate APIs, payments, emails, and third-party services</li>
+          <li>Work closely with clients to ship features quickly</li>
+        </ul>
+      </section>
+
+      <!-- ABOUT -->
       <section id="about">
         <h2>About</h2>
         <p>
-          I am a frontend and full-stack developer with hands-on experience
-          building modern web applications using Next.js, TypeScript, Tailwind
-          CSS, MERN stack, and integrations with tools like Stripe, Nodemailer,
-          and OpenAI’s Assistants API. I focus on creating performant, scalable,
-          and user-friendly interfaces.
+          I’m a frontend-focused full-stack developer with experience building
+          and maintaining real-world production applications for both local and
+          international clients.
         </p>
         <p>
-          I currently work with a US-based client, where I developed a system
-          from scratch that enables rapid deployment of customized websites for
-          new customers through reusable templates. My responsibilities include
-          frontend development, creating animations with Framer Motion, and
-          integrating third-party services.
+          I currently work with a US-based client, where I built a system from
+          scratch and evolved it into a templated solution that allows rapid
+          deployment of customized websites. My role focuses heavily on frontend
+          development, UI polish, and third-party integrations.
         </p>
         <p>
-          Previously, I worked with a local client in the Philippines as a
-          full-stack MERN developer, contributing to an owned platform with
-          structured version control practices (GitHub). This reinforced my
-          skills in team collaboration and code quality management.
+          Previously, I worked as a full-stack MERN developer for a local
+          Philippine-based platform, collaborating closely with the CEO and
+          senior developers while following structured version control and
+          deployment practices.
         </p>
         <p>
-          My background also includes extensive experience across diverse MERN
-          stack projects and an internship where I optimized backend services
-          for a crypto trading platform using React and Python. Throughout my
-          career, I’ve worked with GitLab, GitHub, and Bitbucket for version
-          control.
+          I value clean code, maintainability, and communication — and I’m
+          comfortable working remotely with distributed teams.
         </p>
       </section>
+
+      <!-- WORK -->
       <section id="work">
         <h2>Work Experience</h2>
         <ul>
           <li>
-            <strong>Frontend Developer — US-based Client</strong> (June 2024 –
-            November 2025)<br />
-            Company: <strong>Metaverser Group Inc.</strong><br />
+            <strong>Frontend Developer — US-based Client</strong>
+            Metaverser Group Inc. (June 2024 – November 2025)<br />
             Websites:
-            <a href="https://metaversegroup.tech/" target="_blank"
-              >https://metaversegroup.tech</a
+            <a href="https://metaversegroup.tech/" target="_blank">
+              metaversegroup.tech </a
             >,
-            <a href="https://taxproacademy.tax/" target="_blank"
-              >https://taxproacademy.tax</a
+            <a href="https://taxproacademy.tax/" target="_blank">
+              taxproacademy.tax </a
             ><br />
-            Tech Stack: Next.js (v15.2.4), TypeScript, Tailwind CSS, Framer
-            Motion, Stripe, Calendly, Nodemailer, OpenAI Assistants API<br />
-            Description: Built a system from scratch and transformed it into a
-            templated solution for rapidly deploying customized websites;
-            implemented advanced frontend animations and integrated third-party
-            services.
+            Description: Built and scaled a reusable website system, implemented
+            frontend animations, and integrated third-party services for
+            payments, scheduling, email, and AI.
           </li>
 
           <li>
-            <strong
-              >Full-stack MERN Developer — Local Client (Philippines)</strong
-            >
-            (Nov 2024 – Jan 2025)<br />
-            Company: <strong>Ask Abogado</strong><br />
+            <strong>Full-Stack MERN Developer — Local Client</strong>
+            Ask Abogado (Nov 2024 – Jan 2025)<br />
             Website:
-            <a href="https://askabogado.ph" target="_blank"
-              >https://askabogado.ph</a
+            <a href="https://askabogado.ph" target="_blank"> askabogado.ph </a
             ><br />
-            Tech Stack: MERN Stack (MongoDB, Express.js, React, Node.js),
-            TypeScript, Jest, Postman, GitHub workflows<br />
-            Description: Developed and maintained a legal tech platform;
-            collaborated closely with the CEO and senior developer to deliver
-            high-quality software.
+            Description: Developed and maintained a legal tech platform while
+            collaborating closely with leadership and senior engineers.
           </li>
 
           <li>
-            <strong>Full-stack MERN Developer — Various Clients</strong> (Aug
-            2022 – May 2024)<br />
-            Companies: <strong>Stratpoint Technologies</strong><br />
+            <strong>Full-Stack MERN Developer — Various Projects</strong>
+            Stratpoint Technologies (Aug 2022 – May 2024)<br />
             Websites:
-            <a href="https://stratpoint.com" target="_blank"
-              >https://stratpoint.com</a
-            >,
-            <a href="https://marketing.stratpoint.com/wookie" target="_blank"
-              >https://marketing.stratpoint.com/wookie</a
+            <a href="https://stratpoint.com" target="_blank"> stratpoint.com </a
             ><br />
-            Tech Stack: MERN Stack, TypeScript, Mocha, Chai, Sinon, Postman,
-            GitLab<br />
-            Description: Delivered features across multiple codebases and
-            domains; strengthened adaptability and code comprehension through
-            cross-project experience.
+            Description: Delivered features across multiple products and
+            codebases, gaining experience in scalability and cross-team work.
           </li>
 
           <li>
-            <strong>Full-stack Developer Intern — Crypto Platform</strong> (Apr
-            2022 – Aug 2022)<br />
-            Company: <strong>Swapoolabs (Makatisoft Inc.)</strong><br />
+            <strong>Full-Stack Developer Intern — Crypto Platform</strong>
+            Swapoolabs (Apr 2022 – Aug 2022)<br />
             Website:
-            <a href="https://swapoolabs.com/" target="_blank"
-              >https://swapoolabs.com/</a
+            <a href="https://swapoolabs.com/" target="_blank">
+              swapoolabs.com </a
             ><br />
-            Tech Stack: React, Python, TypeScript, Pytest, Postman, Bitbucket<br />
-            Description: Optimized backend services and trading bot performance;
-            contributed to crypto wallet and exchange feature implementations.
+            Description: Optimized backend services and contributed to trading
+            and wallet features for a crypto platform.
           </li>
         </ul>
       </section>
 
+      <!-- WHY ME -->
+      <section id="why-me">
+        <h2>Why Work With Me</h2>
+        <ul>
+          <li>Clear communicator and easy to work with</li>
+          <li>Comfortable with remote and international teams</li>
+          <li>Frontend-focused with full-stack flexibility</li>
+          <li>Values clean code and long-term maintainability</li>
+          <li>Takes ownership and delivers reliably</li>
+        </ul>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta">
+        <h2>Let’s Build Something</h2>
+        <p>
+          I’m open to frontend or full-stack roles, freelance projects, and
+          long-term remote opportunities. If you’re building something
+          meaningful, I’d love to help.
+        </p>
+      </section>
+
+      <!-- CONTACT -->
       <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: dnvrjose6@gmail.com</p>
+        <h2>Contact</h2>
+        <p>Email: dendeveloperver@gmail.com</p>
         <p>
           LinkedIn:
-          <a href="https://linkedin.com/in/denverjose" target="_blank"
-            >linkedin.com/in/denverjose</a
-          >
+          <a href="https://linkedin.com/in/denverjose" target="_blank">
+            linkedin.com/in/denverjose
+          </a>
         </p>
         <p>
           Resume:
-          <a href="denver-resume.pdf" target="_blank" download>Download PDF</a>
+          <a href="denver-resume.pdf" target="_blank" download>
+            Download PDF
+          </a>
         </p>
       </section>
     </main>
 
-    <footer>&copy; 2025 Denver Jose. All rights reserved.</footer>
+    <footer>
+      &copy; 2025 Denver Jose. All rights reserved.
+      <p>
+        Inspiration:
+        <a href="https://motherfuckingwebsite.com/" target="_blank"
+          >Minimalist web philosophy</a
+        >,
+        <a href="https://justfuckingusehtml.com/" target="_blank"
+          >HTML-first approach</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
