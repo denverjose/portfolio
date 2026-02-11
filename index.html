@@ -15,10 +15,8 @@
         line-height: 1.6;
         max-width: 1000px;
         margin: 0 auto;
-        padding: 20px;
-        padding-top: 70px;
+        padding: 70px 20px 20px;
         color: #333;
-        text-align: justify;
       }
 
       nav {
@@ -50,12 +48,13 @@
       }
 
       h2 {
+        margin-top: 50px;
         border-bottom: 2px solid #eee;
         padding-bottom: 6px;
       }
 
       section {
-        padding-top: 40px;
+        margin-top: 40px;
       }
 
       ul {
@@ -75,7 +74,7 @@
       }
 
       footer {
-        margin-top: 50px;
+        margin-top: 60px;
         padding-top: 15px;
         border-top: 1px solid #ccc;
         font-size: 0.9em;
@@ -83,7 +82,7 @@
         text-align: center;
       }
 
-      /* Home section */
+      /* Home */
       .home-container {
         display: flex;
         align-items: center;
@@ -106,7 +105,7 @@
         object-fit: cover;
       }
 
-      /* Work section */
+      /* Work */
       #work li {
         padding: 15px 0;
         border-bottom: 1px solid #eee;
@@ -119,10 +118,6 @@
 
       /* Mobile */
       @media (max-width: 600px) {
-        body {
-          text-align: left;
-        }
-
         .home-container {
           flex-direction: column;
           text-align: center;
@@ -151,14 +146,9 @@
             <h1>Denver Jose</h1>
             <p><strong>Frontend-Focused Full-Stack Developer</strong></p>
             <p>
-              I help teams and founders build fast, mobile-responsive web
-              applications that solve real problems and deliver clean, reliable
-              user experiences.
-            </p>
-            <p>
-              Frontend is my strength — thoughtful UI, smooth interactions, and
-              usability — backed by solid full-stack experience when the product
-              needs it.
+              I help teams and founders build fast, reliable, and
+              mobile-responsive web applications with clean UI and thoughtful
+              user experience.
             </p>
           </div>
 
@@ -168,42 +158,35 @@
         </div>
       </section>
 
-      <!-- WHAT I DO -->
-      <section id="what-i-do">
-        <h2>What I Do</h2>
-        <ul>
-          <li>Build fast, mobile-responsive websites and web applications</li>
-          <li>Turn designs and ideas into clean, usable interfaces</li>
-          <li>Create reusable, scalable frontend systems</li>
-          <li>Integrate APIs, payments, emails, and third-party services</li>
-          <li>Work closely with clients to ship features quickly</li>
-        </ul>
-      </section>
-
       <!-- ABOUT -->
       <section id="about">
         <h2>About</h2>
         <p>
           I’m a frontend-focused full-stack developer with experience building
-          and maintaining real-world production applications for both local and
-          international clients.
+          production applications for both local and international clients.
         </p>
         <p>
-          I currently work with a US-based client, where I built a system from
-          scratch and evolved it into a templated solution that allows rapid
-          deployment of customized websites. My role focuses heavily on frontend
-          development, UI polish, and third-party integrations.
+          My strengths are React, Next.js, and TypeScript, with a strong focus
+          on UI quality, performance, and maintainable architecture. I’ve built
+          systems from scratch, turned them into reusable templates, and
+          integrated third-party services to support real business needs.
         </p>
         <p>
-          Previously, I worked as a full-stack MERN developer for a local
-          Philippine-based platform, collaborating closely with the CEO and
-          senior developers while following structured version control and
-          deployment practices.
+          I communicate clearly, work well in remote teams, and care deeply
+          about clean code and long-term maintainability.
         </p>
-        <p>
-          I value clean code, maintainability, and communication — and I’m
-          comfortable working remotely with distributed teams.
-        </p>
+      </section>
+
+      <!-- WHAT I DO -->
+      <section id="what-i-do">
+        <h2>What I Do</h2>
+        <ul>
+          <li>Build responsive websites and web applications</li>
+          <li>Translate designs and ideas into clean, usable interfaces</li>
+          <li>Create reusable and scalable frontend systems</li>
+          <li>Integrate APIs, payments, email, and third-party tools</li>
+          <li>Collaborate closely with clients and teams</li>
+        </ul>
       </section>
 
       <!-- WORK -->
@@ -220,9 +203,18 @@
             <a href="https://taxproacademy.tax/" target="_blank">
               taxproacademy.tax </a
             ><br />
-            Description: Built and scaled a reusable website system, implemented
-            frontend animations, and integrated third-party services for
-            payments, scheduling, email, and AI.
+            Built and maintained a reusable, templated website system, including
+            the main client-facing site and multiple internal or personal sites.
+            Templates allowed non-technical users to easily update content such
+            as images, titles, and author details. Also recreated legacy sites
+            (e.g., Updraft) to modern, maintainable templates.
+            <br />
+            <small>
+              <code>Next.js</code>, <code>TypeScript</code>,
+              <code>Tailwind CSS</code>, <code>Material UI</code>,
+              <code>Supabase</code>, <code>Stripe</code>, <code>OpenAI</code>,
+              <code>Framer Motion</code>
+            </small>
           </li>
 
           <li>
@@ -231,18 +223,39 @@
             Website:
             <a href="https://askabogado.ph" target="_blank"> askabogado.ph </a
             ><br />
-            Description: Developed and maintained a legal tech platform while
-            collaborating closely with leadership and senior engineers.
+            Developed and maintained a legal tech platform, collaborating
+            closely with the CEO and lead engineer on feature development,
+            technical decisions, and ongoing product improvements.
+            <br />
+            <small>
+              <code>React</code>, <code>TypeScript</code>,
+              <code>Express.js</code>, <code>MongoDB</code>,
+              <code>MongoDB Compass</code>, <code>Docker</code>,
+              <code>AWS</code>, <code>Material UI</code>, <code>Formik</code>,
+              <code>Postman</code>,
+              <code>Jest</code>
+            </small>
           </li>
 
           <li>
-            <strong>Full-Stack MERN Developer — Various Projects</strong>
+            <strong>Full-Stack MERN Developer</strong>
             Stratpoint Technologies (Aug 2022 – May 2024)<br />
-            Websites:
+            Website:
             <a href="https://stratpoint.com" target="_blank"> stratpoint.com </a
             ><br />
-            Description: Delivered features across multiple products and
-            codebases, gaining experience in scalability and cross-team work.
+            Delivered features across multiple enterprise products and shared
+            codebases, working with cross-functional teams and contributing to
+            scalable and maintainable systems.
+            <br />
+            <small>
+              <code>React</code>, <code>Next.js</code>, <code>TypeScript</code>,
+              <code>MongoDB Atlas</code>, <code>MongoDB Compass</code>,
+              <code>Docker</code>, <code>AWS</code>, <code>Postman</code>,
+              <code>Material UI</code>, <code>Tailwind CSS</code>,
+              <code>Formik</code>, <code>Refine.dev</code>,
+              <code>Ant Design</code>, <code>Jest</code>, <code>Mocha</code>,
+              <code>Chai</code>
+            </small>
           </li>
 
           <li>
@@ -252,21 +265,16 @@
             <a href="https://swapoolabs.com/" target="_blank">
               swapoolabs.com </a
             ><br />
-            Description: Optimized backend services and contributed to trading
-            and wallet features for a crypto platform.
+            Built frontend UI/UX components and contributed to backend services,
+            optimizing function logic to improve response times and data return
+            efficiency for trading-related features.
+            <br />
+            <small>
+              <code>React</code>, <code>TypeScript</code>, <code>Python</code>,
+              <code>Flask</code>, <code>Material UI</code>, <code>AWS</code>,
+              <code>Postman</code>, <code>Pytest</code>, <code>Jira</code>,
+            </small>
           </li>
-        </ul>
-      </section>
-
-      <!-- WHY ME -->
-      <section id="why-me">
-        <h2>Why Work With Me</h2>
-        <ul>
-          <li>Clear communicator and easy to work with</li>
-          <li>Comfortable with remote and international teams</li>
-          <li>Frontend-focused with full-stack flexibility</li>
-          <li>Values clean code and long-term maintainability</li>
-          <li>Takes ownership and delivers reliably</li>
         </ul>
       </section>
 
@@ -303,12 +311,12 @@
       &copy; 2025 Denver Jose. All rights reserved.
       <p>
         Inspiration:
-        <a href="https://motherfuckingwebsite.com/" target="_blank"
-          >Minimalist web philosophy</a
+        <a href="https://motherfuckingwebsite.com/" target="_blank">
+          Minimalist web philosophy </a
         >,
-        <a href="https://justfuckingusehtml.com/" target="_blank"
-          >HTML-first approach</a
-        >
+        <a href="https://justfuckingusehtml.com/" target="_blank">
+          HTML-first approach
+        </a>
       </p>
     </footer>
   </body>
