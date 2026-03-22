@@ -5,129 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denver Jose — Portfolio</title>
 
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 70px 20px 20px;
-        color: #333;
-      }
-
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        border-bottom: 1px solid #ddd;
-        text-align: center;
-        padding: 12px 0;
-        z-index: 1000;
-      }
-
-      nav a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-      }
-
-      nav a:hover {
-        text-decoration: underline;
-      }
-
-      h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-      }
-
-      h2 {
-        margin-top: 50px;
-        border-bottom: 2px solid #eee;
-        padding-bottom: 6px;
-      }
-
-      section {
-        margin-top: 40px;
-      }
-
-      ul {
-        padding-left: 20px;
-      }
-
-      li {
-        margin-bottom: 12px;
-      }
-
-      a {
-        color: #000;
-      }
-
-      a:hover {
-        color: #555;
-      }
-
-      footer {
-        margin-top: 60px;
-        padding-top: 15px;
-        border-top: 1px solid #ccc;
-        font-size: 0.9em;
-        color: #777;
-        text-align: center;
-      }
-
-      /* Home */
-      .home-container {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 30px;
-      }
-
-      .home-text {
-        flex: 1 1 300px;
-      }
-
-      .home-image {
-        flex: 0 0 200px;
-        text-align: center;
-      }
-
-      .home-image img {
-        max-width: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-
-      /* Work */
-      #work li {
-        padding: 15px 0;
-        border-bottom: 1px solid #eee;
-      }
-
-      #work strong {
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      /* Mobile */
-      @media (max-width: 600px) {
-        .home-container {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        nav a {
-          margin: 0 10px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body id="home">
@@ -136,6 +14,9 @@
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <span id="themeIcon">🌙</span>
+      </button>
     </nav>
 
     <main>
@@ -153,7 +34,7 @@
           </div>
 
           <div class="home-image">
-            <img src="profile.jpeg" alt="Denver Jose" />
+            <img src="images/profile.jpeg" alt="Denver Jose" />
           </div>
         </div>
       </section>
@@ -169,77 +50,103 @@
         <p>
           I primarily use the MERN stack and Next.js, along with tools like
           Tailwind CSS, Material UI, and Framer Motion to build modern,
-          responsive, and scalable applications. I’ve developed systems from the
-          ground up, improved existing codebases, and integrated third-party
-          services to support real-world business requirements.
+          responsive, and scalable applications.
         </p>
         <p>
-          I’m highly adaptable and used to working across different projects and
-          codebases, allowing me to quickly understand systems and contribute
-          effectively. I work well in remote environments, communicate clearly,
-          and focus on writing clean, maintainable code that scales.
+          I’m highly adaptable, communicate clearly, and focus on writing clean,
+          maintainable code.
         </p>
-      </section>
-
-      <!-- WHAT I DO -->
-      <section id="what-i-do">
-        <h2>What I Do</h2>
-        <ul>
-          <li>Build responsive websites and web applications</li>
-          <li>Translate designs and ideas into clean, usable interfaces</li>
-          <li>Create reusable and scalable frontend systems</li>
-          <li>Integrate APIs, payments, email, and third-party tools</li>
-          <li>Collaborate closely with clients and teams</li>
-        </ul>
       </section>
 
       <!-- WORK -->
       <section id="work">
         <h2>Work Experience</h2>
-        <ul>
-          <li>
+
+        <div class="work-item">
+          <div class="work-images">
+            <div class="work-image">
+              <a
+                href="https://metaverse-group.vercel.app/"
+                target="_blank"
+                class="image-link"
+              >
+                <img src="images/metaverse.png" alt="Metaverse Group" />
+
+                <div class="image-overlay">
+                  <i>
+                    Scalable template-based platform for reusable UI systems for
+                    my client's clients.
+                  </i>
+                </div>
+              </a>
+            </div>
+            <div class="work-image">
+              <a
+                href="https://defi-university.vercel.app/"
+                target="_blank"
+                class="image-link"
+              >
+                <img src="images/defi-university.png" alt="Defi University" />
+
+                <div class="image-overlay">
+                  <i>
+                    Recreated online course platform inspired by Cyfrin Updraft
+                  </i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="work-text">
             <strong>Frontend Developer — US-based Client</strong>
-            Metaverser Group Inc. (June 2024 – November 2025)<br />
-            Websites:
-            <a
-              href="https://github.com/denverjose/taxpro-accelerator"
-              target="_blank"
-            >
-              taxproaccelerator.com </a
-            >,
-            <a href="https://metaverse-group.vercel.app/" target="_blank">
-              metaversegroup.tech </a
-            >,
-            <a href="https://defi-university.vercel.app/" target="_blank">
-              taxproacademy.tax
-            </a>
-            <a href="https://updraft.cyfrin.io/courses" target="_blank">
-              (Cyfrin Updraft-inspired) </a
-            ><br />
-            Built and maintained a reusable, templated website system, including
-            the main client-facing site and multiple internal or personal sites.
-            Templates allowed non-technical users to easily update content such
-            as images, titles, and author details. Also recreated legacy sites
-            (e.g., Updraft-inspired) to modern, maintainable templates.
-            <br />
+            <p>
+              <a href="https://taxproaccelerator.com/" target="_blank">
+                Taxpro Accelerator</a
+              >
+              (June 2024 – November 2025)
+            </p>
+            <p>
+              Built and maintained a reusable, templated website system,
+              including the main client-facing site and multiple internal or
+              personal sites. Templates allowed non-technical users to easily
+              update content such as images, titles, and author details. Also
+              recreated legacy sites (e.g., Updraft-inspired) to modern,
+              maintainable templates.
+            </p>
             <small>
               <code>Next.js</code>, <code>TypeScript</code>,
               <code>Tailwind CSS</code>, <code>Material UI</code>,
               <code>Supabase</code>, <code>Stripe</code>, <code>OpenAI</code>,
               <code>Framer Motion</code>
             </small>
-          </li>
+          </div>
+        </div>
 
-          <li>
+        <div class="work-item reverse">
+          <div class="work-image">
+            <a href="https://askabogado.ph/" target="_blank" class="image-link">
+              <img src="images/askabogado.png" alt="Ask Abogado" />
+
+              <div class="image-overlay">
+                <i>Online platform for booking legal consultations</i>
+              </div>
+            </a>
+          </div>
+          <div class="work-text">
             <strong>Full-Stack MERN Developer — Local Client</strong>
-            Ask Abogado (Nov 2024 – Jan 2025)<br />
-            Website:
-            <a href="https://askabogado.ph" target="_blank"> askabogado.ph </a
-            ><br />
-            Developed and maintained a legal tech platform, collaborating
-            closely with the CEO and lead engineer on feature development,
-            technical decisions, and ongoing product improvements.
-            <br />
+            <p>
+              <a
+                href="https://www.linkedin.com/company/askabogadoph/"
+                target="_blank"
+              >
+                Ask Abogado</a
+              >
+              (Nov 2024 – Jan 2025)
+            </p>
+            <p>
+              Developed and maintained a legal tech platform, collaborating
+              closely with the CEO and lead engineer on feature development,
+              technical decisions, and ongoing product improvements..
+            </p>
             <small>
               <code>React</code>, <code>TypeScript</code>,
               <code>Express.js</code>, <code>MongoDB</code>,
@@ -248,18 +155,60 @@
               <code>Postman</code>,
               <code>Jest</code>
             </small>
-          </li>
+          </div>
+        </div>
 
-          <li>
-            <strong>Full-Stack MERN Developer</strong>
-            Stratpoint Technologies (Aug 2022 – May 2024)<br />
-            Website:
-            <a href="https://stratpoint.com" target="_blank"> stratpoint.com </a
-            ><br />
-            Delivered features across multiple enterprise products and shared
-            codebases, working with cross-functional teams and contributing to
-            scalable and maintainable systems.
-            <br />
+        <div class="work-item">
+          <div class="work-images">
+            <div class="work-image">
+              <a
+                href="https://stratpoint.com/"
+                target="_blank"
+                class="image-link"
+              >
+                <img src="images/stratpoint.png" alt="Strapoint Technologies" />
+
+                <div class="image-overlay">
+                  <i
+                    >Enterprise team delivering features across multiple client
+                    and internal projects</i
+                  >
+                </div>
+              </a>
+            </div>
+            <div class="work-image">
+              <a
+                href="https://marketing.stratpoint.com/wookie"
+                target="_blank"
+                class="image-link"
+              >
+                <img src="images/wookie.png" alt="Stratpoint Wookie" />
+
+                <div class="image-overlay">
+                  <i
+                    >Internal seat booking system with weekly onsite tracking
+                    and HR reporting</i
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="work-text">
+            <strong>Software Engineer III </strong>
+            <p>
+              <a
+                href="https://www.linkedin.com/company/stratpoint/"
+                target="_blank"
+              >
+                Stratpoint Technologies</a
+              >
+              (Aug 2022 – May 2024)
+            </p>
+            <p>
+              Delivered features across multiple enterprise products and shared
+              codebases, working with cross-functional teams and contributing to
+              scalable and maintainable systems.
+            </p>
             <small>
               <code>React</code>, <code>Next.js</code>, <code>TypeScript</code>,
               <code>MongoDB Atlas</code>, <code>MongoDB Compass</code>,
@@ -269,42 +218,70 @@
               <code>Ant Design</code>, <code>Jest</code>, <code>Mocha</code>,
               <code>Chai</code>
             </small>
-          </li>
+          </div>
+        </div>
+        <div class="work-item reverse">
+          <div class="work-image">
+            <a
+              href="https://swapoolabs.com/"
+              target="_blank"
+              class="image-link"
+            >
+              <img src="images/swapoolabs.png" alt="Swapoolabs" />
 
-          <li>
-            <strong>Full-Stack Developer Intern — Crypto Platform</strong>
-            Swapoolabs (Apr 2022 – Aug 2022)<br />
-            Website:
-            <a href="https://swapoolabs.com/" target="_blank">
-              swapoolabs.com </a
-            ><br />
-            Built frontend UI/UX components and contributed to backend services,
-            optimizing function logic to improve response times and data return
-            efficiency for trading-related features.
-            <br />
+              <div class="image-overlay">
+                <i>
+                  Crypto platform where users subscribe to automated trading
+                  bots
+                </i>
+              </div>
+            </a>
+          </div>
+
+          <div class="work-text">
+            <strong>Software Engineer Intern</strong>
+            <p>
+              <a
+                href="https://www.linkedin.com/company/swapoolabs-inc/"
+                target="_blank"
+              >
+                Swapoolabs (Makatisoft Inc.)</a
+              >
+              (Apr 2022 – Aug 2022)
+            </p>
+
+            <p>
+              Built frontend UI/UX components and contributed to backend
+              services, optimizing function logic to improve response times and
+              data return efficiency for trading-related features.
+            </p>
             <small>
               <code>React</code>, <code>TypeScript</code>, <code>Python</code>,
               <code>Flask</code>, <code>Material UI</code>, <code>AWS</code>,
               <code>Postman</code>, <code>Pytest</code>, <code>Jira</code>,
             </small>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
 
       <!-- CTA -->
       <section id="cta">
-        <h2>Let’s Build Something</h2>
+        <h2>Let’s Build Something!</h2>
         <p>
           I’m open to frontend or full-stack roles, freelance projects, and
-          long-term remote opportunities. If you’re building something
-          meaningful, I’d love to help.
+          long-term remote opportunities.
         </p>
       </section>
 
       <!-- CONTACT -->
       <section id="contact">
         <h2>Contact</h2>
-        <p>Email: dendeveloperver@gmail.com</p>
+        <p>
+          Email:
+          <a href="mailto:dendeveloperver@gmail.com">
+            dendeveloperver@gmail.com
+          </a>
+        </p>
         <p>
           LinkedIn:
           <a href="https://linkedin.com/in/denverjose" target="_blank">
@@ -313,24 +290,13 @@
         </p>
         <p>
           Resume:
-          <a href="denver-resume.pdf" target="_blank" download>
-            Download PDF
-          </a>
+          <a href="denver-resume.pdf" download> Download PDF </a>
         </p>
       </section>
     </main>
 
-    <footer>
-      &copy; 2025 Denver Jose. All rights reserved.
-      <p>
-        Inspiration:
-        <a href="https://motherfuckingwebsite.com/" target="_blank">
-          Minimalist web philosophy </a
-        >,
-        <a href="https://justfuckingusehtml.com/" target="_blank">
-          HTML-first approach
-        </a>
-      </p>
-    </footer>
+    <footer>&copy; 2025 Denver Jose. All rights reserved.</footer>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
